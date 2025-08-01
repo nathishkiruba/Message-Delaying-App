@@ -6,7 +6,7 @@ import { Button } from "./ui/button"
 const MessageForm = () => {
 
     const [message, setMessage] = useState<string>("");
-    const [delay, setDelay] = useState<number>();
+    const [delay, setDelay] = useState<number>(5);
     const [isSending, setIsSending] = useState<boolean>(false);
     const [timerId, setTimerId] = useState<NodeJS.Timeout | null>(null);
     const [sentMessage, setSentMessage] = useState<string>("");
